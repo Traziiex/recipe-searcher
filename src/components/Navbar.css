@@ -1,5 +1,6 @@
 nav{
     width: 100%;
+    height: 20vh;
     margin-left:auto;
     margin-right:auto;
     margin-top:0vh;
@@ -7,10 +8,10 @@ nav{
 
 .nav-container{
     width: 100%;
-    height: 10vh;
+    height: 100%;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content:space-around;
     
@@ -25,20 +26,23 @@ nav{
     border-radius: 20px;
     padding: 10px;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.5em;
+    width:60%;
 }
 
 .nav-container img{
-    height: 65%;
+    height: 20%;
 }
 
 .nav-container div{
     height: 100%;
     width: 40%;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content:center;
     flex-direction: row;
+    border:solid;
 }
 
 .nav-container div h1 {

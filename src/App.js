@@ -35,10 +35,7 @@ function App() {
     <nav>
       <div className="nav-container">
         <div>
-          <img src={Food} alt='Food'></img>
-          <h1>RECIPE</h1>
-        </div>
-        <div>
+        <img src={Food}></img>
           <input type="text" onChange={changeIngredient}></input>
           <img src={Search} alt='Search' className='search-btn' onClick={getRecipe}></img>
         </div>                     
