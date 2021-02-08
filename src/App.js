@@ -17,7 +17,8 @@ function App() {
     const key = 'a5cc238333cee8ed7741a1302e34865a';
     const id = '4b353692';
 
-    const getRecipe = async () => {
+    const getRecipe = async (e) => {
+        e.preventDefault();
         console.log(ingredient);
         const response = await fetch(`https://api.edamam.com/search?q=${ingredient}&app_id=${id}&app_key=${key}`);
         const data = await response.json();
@@ -34,11 +35,10 @@ function App() {
     <div className="App">
     <nav>
       <div className="nav-container">
-        <div>
-        <img src={Food}></img>
-          <input type="text" onChange={changeIngredient}></input>
-          <img src={Search} alt='Search' className='search-btn' onClick={getRecipe}></img>
-        </div>                     
+          <form onSubmit={getRecipe}>
+            <input type="text" onChange={changeIngredient}></input>
+            <img className="search-btn" src={Search} alt='Search' onClick={getRecipe}></img>
+          </form>                 
       </div>
     </nav>
 
@@ -48,7 +48,7 @@ function App() {
           <Recipe recipe={recipe}/>
         ))}
       </div>
-    </main>  
+    </main>
     </div>
   );
 }

@@ -9,6 +9,22 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
+    transition: all 1s ease-in-out 0s;
+}
+
+button{
+    width: 50%;
+    height: 40px;
+    border:solid 1px rgb(255, 185, 33);
+    background:transparent;
+    color:orangered;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.recipe-container > *{
+    margin: 15px 0;
 }

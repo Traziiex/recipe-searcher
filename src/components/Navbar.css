@@ -14,12 +14,9 @@ nav{
     height: 100%;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content:space-around;
-    
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    justify-content:center;
 }
 
 .nav-container input {
@@ -27,24 +24,11 @@ nav{
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     border-style: solid;
     border-radius: 20px;
+    margin: 0;
     padding: 10px;
     text-align: center;
-    font-size: 0.5em;
-    width:60%;
-}
-
-.nav-container img{
-    height: 40%;
-}
-
-.nav-container div{
-    height: 100%;
-    width: 70%;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: row;
+    font-size: 1em;
+    width:100%;
 }
 
 .nav-container div h1 {
@@ -52,7 +36,17 @@ nav{
 }
 
 .search-btn{
-    background: url('search.svg');
     margin-left:10px;
     cursor: pointer;
+    max-width:50%;
+    max-height:50%;
+}
+
+form{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
 }
