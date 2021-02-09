@@ -4,7 +4,7 @@ import './Recipe.css';
 
 function Recipe(props) {
 
-  const [buttonText, setButtonText] = useState('Voir plus');
+  const [buttonText, setButtonText] = useState('More');
   const [buttonState, setButtonState] = useState(false);
   const [listStyle, setListStyle] = useState('none');
   const ingredients = props.recipe.recipe.ingredientLines;
@@ -12,11 +12,11 @@ function Recipe(props) {
   const buttonClicked = () => {
     if(buttonState){
       setButtonState(false);
-      setButtonText('Voir plus');
+      setButtonText('More');
       setListStyle('none');
     }else{
       setButtonState(true);
-      setButtonText('Voir moins');
+      setButtonText('Less');
       setListStyle('inline');
     }
   }

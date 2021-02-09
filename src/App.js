@@ -35,10 +35,10 @@ function App() {
     <div className="App">
     <nav>
       <div className="nav-container">
-          <form onSubmit={getRecipe}>
+          <form id='search-form' onSubmit={getRecipe}>
             <input type="text" onChange={changeIngredient}></input>
             <img className="search-btn" src={Search} alt='Search' onClick={getRecipe}></img>
-          </form>                 
+          </form>                
       </div>
     </nav>
 
